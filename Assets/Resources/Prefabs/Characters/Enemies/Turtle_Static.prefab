@@ -112,7 +112,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 1727435ac0bd44636abb77bf2937c029, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &11400000
@@ -126,6 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7236eedf7f2412683f8a51cd28053e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: 0
+  unitConfig: {fileID: 0}
+  state: 0
   gunObject: {fileID: 100000}
   bullet: {fileID: 100000, guid: 59ae4935427e44d2cad119423fb98e51, type: 2}
 --- !u!114 &11400002
@@ -141,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   unitConfig: {fileID: 0}
+  state: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
