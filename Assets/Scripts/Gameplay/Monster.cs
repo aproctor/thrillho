@@ -24,6 +24,12 @@ public class Monster : Unit {
     }
   }
 
+	public override void Die ()
+	{
+		//Don't call base.Die() here that will destroy it
+		state = MonsterStates.Dead;
+	}
+
   public virtual void OnAggro() {
     //Override this to allow shooting
   }
