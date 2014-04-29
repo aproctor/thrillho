@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Monster : Unit {
 
+
   public enum MonsterStates {
     Idle,
     Aggro,
@@ -24,18 +25,13 @@ public class Monster : Unit {
     }
   }
 
-	public override void Die ()
-	{
-		//Don't call base.Die() here that will destroy it
-		state = MonsterStates.Dead;
-	}
-
   public virtual void OnAggro() {
     //Override this to allow shooting
   }
   
   public override void Die () {
     if(state == MonsterStates.Aggro) {
+      state = MonsterStates.Dead;
       base.Die();
     }
   }
